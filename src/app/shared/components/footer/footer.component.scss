@@ -1,0 +1,34 @@
+footer {
+    background-color: #0a141e;
+    height: 144px;
+
+    @media (max-width: 375px) {
+        height: 86px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+
+        .footer-icon {
+            height: 44px;
+
+            @media (max-width: 820px) {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                object-position: left;
+            }
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: end;
+            gap: 16px;
+        }
+    }
+}

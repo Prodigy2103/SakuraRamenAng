@@ -1,0 +1,129 @@
+#menu {
+    background-image: url("/assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    .content {
+		height: auto;
+        .menu_items {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                width: 352px;
+                height: 352px;
+
+                @media (max-width: 690px) {
+                    width: 332px;
+                    height: 332px;
+                    margin-bottom: 24px;
+                }
+
+                @media (max-width: 360px) {
+                    width: 282px;
+                    height: 282px;
+                    margin-bottom: 24px;
+                }
+            }
+
+            .menu_startEnd {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 56px;
+                width: 100%;
+                gap: 80px;
+
+                @media (max-width: 1245px) {
+                    gap: 40px;
+                }
+
+                @media (max-width: 1105px) {
+                    gap: 30px;
+                }
+
+                @media (max-width: 768px) {
+                    gap: 20px;
+                }
+
+                @media (max-width: 690px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            .menu_middle {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 56px;
+                width: 100%;
+                gap: 80px;
+
+                @media (max-width: 1245px) {
+                    gap: 40px;
+                }
+
+                @media (max-width: 1105px) {
+                    gap: 30px;
+                }
+
+                @media (max-width: 768px) {
+                    gap: 20px;
+                }
+
+                @media (max-width: 690px) {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+            }
+            table {
+                width: 100%;
+
+                th {
+                    width: 100%;
+                    text-align: start;
+                    font-family: "Economica", sans-serif;
+                    font-size: 56px;
+                    color: #000000;
+                    margin-bottom: 16px;
+
+                    @media (max-width: 1105px) {
+                        font-size: 40px;
+                    }
+
+                    @media (max-width: 890px) {
+                        font-size: 34px;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: 32px;
+                    }
+                }
+
+                .price {
+                    text-align: right;
+                }
+
+                td {
+                    font-family: "Raleway", sans-serif;
+                    font-size: calc(16px + 1.5dvw);
+                    color: #675e54;
+                    font-weight: bold;
+                    margin-bottom: 8px;
+
+                    @media (max-width: 768px) {
+                        font-size: 24px;
+                    }
+
+                    @media (max-width: 375px) {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+}

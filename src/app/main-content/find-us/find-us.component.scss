@@ -1,0 +1,55 @@
+#adress {
+    padding-bottom: 0;
+    width: 100%;
+    .content {
+        padding: 0;
+        h2 {
+            margin-bottom: 8px;
+        }
+        h3 {
+            padding-bottom: 64px;
+            font-family: "Raleway", sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            @media (max-width: 768px) {
+                padding-bottom: 48px;
+                font-size: 20px;
+            }
+            @media (max-width: 476px) {
+                padding-bottom: 40px;
+                font-size: 16px;
+            }
+        }
+        .map {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            @media (max-width: 768px) {
+                font-size: 20px;
+            }
+            @media (max-width: 375px) {
+            }
+
+            img {
+                width: 32px;
+                height: 32px;
+                @media (max-width: 768px) {
+                    width: 24px;
+                    height: 24px;
+                }
+                @media (max-width: 375px) {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+        .google-maps {
+            width: 100%;
+
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+}

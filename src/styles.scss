@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .content {
+        width: 100%;
+        max-width: 1920px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 160px;
+
+        @media (max-width: 1240px) {
+            padding: 0 120px;
+        }
+        @media (max-width: 950px) {
+            padding: 0 80px;
+        }
+        @media (max-width: 800px) {
+            padding: 0 24px;
+        }
+        @media (max-width: 768px) {
+            padding: 0 24px;
+        }
+        @media (max-width: 375px) {
+            padding: 0 16px;
+        }
+    }
+}
+
+section {
+    padding: 120px 0 100px;
+}
+/* #region h2 */
+h2 {
+    width: 100%;
+    font-size: calc(16px + 4.7dvw);
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #9f0908;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 48px;
+    }
+    @media (max-width: 375px) {
+        margin-bottom: 40px;
+    }
+}
+/* #endregion */
