@@ -5,9 +5,17 @@ section {
   height: 112px;
   padding: 0 120px;
 
+  @media (max-width: 540px) {
+        padding: 40px;
+      }
+
   img {
     width: 44px;
     height: 44px;
+
+    @media (max-width: 540px) {
+        display: none;
+      }
   }
 
   .navigation {
@@ -16,6 +24,17 @@ section {
     justify-content: end;
     align-items: center;
     gap: 40px;
+
+    @media (max-width: 540px) {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+      }
+
+      @media (max-width: 420px) {
+        width: 80%;
+      }
 
     ul {
       display: flex;
@@ -48,6 +67,14 @@ section {
 
       @media (max-width: 950px) {
         width: 170px;
+      }
+
+      @media (max-width: 530px) {
+        width: 100%;
+      }
+
+      @media (max-width: 420px) {
+        width: 100%;
       }
 
       a {
