@@ -4,6 +4,21 @@
     background-position: center;
     .content {
 		height: auto;
+
+        button {
+            position: absolute;
+            top: -4em;
+            right: 5em;
+            width: 5%;
+            height: 2%;
+            cursor: pointer;
+            border: none;
+            border-radius: 0.5em;
+
+            &:hover {
+                background: rgb(200, 200, 200);
+            }
+        }
         .menu_items {
             width: 100%;
             display: flex;

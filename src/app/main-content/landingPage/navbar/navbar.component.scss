@@ -1,3 +1,5 @@
+@use '../../../../../public/assets/styles/all_styles.scss' as all;
+
 section {
   display: flex;
   align-items: center;
@@ -5,17 +7,14 @@ section {
   height: 112px;
   padding: 0 120px;
 
-  @media (max-width: 540px) {
+  @include all.tablet {
         padding: 40px;
+        justify-content: end;
       }
 
   img {
     width: 44px;
     height: 44px;
-
-    @media (max-width: 540px) {
-        display: none;
-      }
   }
 
   .navigation {
@@ -23,16 +22,16 @@ section {
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 40px;
+    gap: 0;
 
-    @media (max-width: 540px) {
-        width: 50%;
+    @include all.tablet {
+        width: 100%;
         display: flex;
-        justify-content: center;
-        gap: 0;
+        justify-content: end;
+        gap: 50px;
       }
 
-      @media (max-width: 420px) {
+      @include all.mobile {
         width: 80%;
       }
 
@@ -65,18 +64,14 @@ section {
       border-radius: 5px;
       padding: 8px;
 
-      @media (max-width: 950px) {
-        width: 170px;
-      }
-
-      @media (max-width: 530px) {
+      @include all.desktop {
         width: 100%;
       }
 
-      @media (max-width: 420px) {
-        width: 100%;
+      @include all.tablet {
+        width: 80;
       }
-
+      
       a {
         color: white;
         font-family: "Raleway", sans-serif;

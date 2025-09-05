@@ -2,6 +2,22 @@
     padding-bottom: 0;
     width: 100%;
     .content {
+
+        button {
+            position: absolute;
+            top: -4em;
+            right: 5em;
+            width: 5%;
+            height: 4%;
+            cursor: pointer;
+            border: none;
+            border-radius: 0.5em;
+
+            &:hover {
+                background: rgb(200, 200, 200);
+            }
+        }
+
         padding: 0;
         h2 {
             margin-bottom: 8px;

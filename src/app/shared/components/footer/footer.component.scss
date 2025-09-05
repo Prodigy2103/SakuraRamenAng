@@ -28,7 +28,17 @@ footer {
             height: 40px;
             display: flex;
             justify-content: end;
+            align-items: center;
             gap: 16px;
+        }
+
+        a {
+            color: white;
+            font-family: 'Economica', sans-serif;
+
+            &:hover {
+                color: lightgray;
+            }
         }
     }
 }
